@@ -1,0 +1,12 @@
+brand: Marker Manager
+
+bootswatch: null # flatly, yeti, lumen,... 
+navbar_inverse: false 
+bootstrap: 3.3.4
+navbar_right_items: 1
+# baseurl: /testdoc
+
+reflinks:
+    content_license:
+        url: http://creativecommons.org/licenses/by-sa/3.0/
+        title: CC-BY-SA License
