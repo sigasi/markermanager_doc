@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Import Warnings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <link href="/css/site.css" rel="stylesheet" media="screen">
+    <link href="/css/syntax.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Marker Manager</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/intro.html">Introduction</a></li>
+            <li><a href="/installing.html">Installing</a></li>
+            <li><a href="/suppress_warnings.html">Suppress Warnings</a></li>
+            <li><a href="/export_warnings.html">Export Warnings</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/import_warnings.html">Import Warnings</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+<div class="container">
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+      <li class="active">Import Warnings</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Import Warnings</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="content">
+      <div class="col-md-7" role="main">
+        <h2 id="why-import-warnings">Why import warnings?</h2>
+<p>It can be useful to import warnings from other tools.</p>
+<p>For example, if you have a third party code checker that does not</p>
+<p>This feature is called the <em>Marker Builder</em> </p>
+<h2 id="how-to-import-warnings">How to import warnings</h2>
+<p>Generate a list of warnings</p>
+<p>The Marker Builder reads one specific file, named <code>markers.rpt</code>, in the root directory of your project. 
+In this file, each line contains tab-separated values, in either of the following formats:</p>
+<div class="codehilite"><pre>filename linenumber warning message
+</pre></div>
+
+
+<p>or</p>
+<div class="codehilite"><pre>filename linenumber startchar endchar warning message
+</pre></div>
+
+
+<p>Enable the Marker Builder</p>
+<p>Right-click on your project; <strong>Configure &gt; Enable Marker Builder</strong></p>
+<h2 id="example-project">Example project</h2>
+<p>We have created an example project that demonstrates the use of the Marker Builder. You can download <a href="http://www.github.com:sigasi/eclipse_custom_code_checker">this project from GitHub</a></p>
+      </div>
+    </div>
+
+    <div class="col-md-3" role="complementary">
+      <nav class="hidden-print hidden-xs hidden-sm">
+        <div class="sidebar" data-spy="affix" data-offset-top="80" data-offset-bottom="60">
+          <div class="well">
+            <a href="#"><strong>Import Warnings</strong></a>
+            <div class="toc">
+<ul>
+<li><a href="#why-import-warnings">Why import warnings?</a></li>
+<li><a href="#how-to-import-warnings">How to import warnings</a></li>
+<li><a href="#example-project">Example project</a></li>
+</ul>
+</div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+  <ul class="pager">
+    <li class="previous"><a href="/export_warnings.html">&larr; Export Warnings</a></li>
+  </ul>
+
+    <div class="footer">
+        <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+    </div>
+
+
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
