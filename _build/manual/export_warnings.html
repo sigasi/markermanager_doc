@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Suppress Warnings</title>
+    <title>Export Warnings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <!-- Bootstrap -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/css/site.css" rel="stylesheet" media="screen">
     <link href="/css/syntax.css" rel="stylesheet" media="screen">
 
@@ -34,14 +34,13 @@
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="/intro.html">Introduction</a></li>
+            <li><a href="/about.html">About</a></li>
             <li><a href="/installing.html">Installing</a></li>
-            <li class="active"><a href="/suppress_warnings.html">Suppress Warnings</a></li>
-            <li><a href="/export_warnings.html">Export Warnings</a></li>
+            <li class="active"><a href="/manual/">Manual</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/import_warnings.html">Import Warnings</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -53,21 +52,26 @@
 
   <ol class="breadcrumb">
     <li><a href="/">Home</a></li>
-      <li class="active">Suppress Warnings</li>
+      <li><a href="/manual/">Manual</a></li>
+      <li class="active">Export Warnings</li>
   </ol>
 
   <div class="page-header">
-    <h1>Suppress Warnings</h1>
+    <h1>Export Warnings</h1>
   </div>
 
   <div class="row">
 
     <div class="content">
       <div class="col-md-7" role="main">
-        <p>In any language in Eclipse, simply write <code>@suppress</code> on the line of your warning. Your warning will be suppressed.
-Even though the warning may still be visible in your file, it is now removed from the Problems View.</p>
-<p><img alt="Alt text" src="/screenshots/ignore_warning.png" /></p>
-<p>Note that you can only suppress <em>warnings</em>, not errors or notes. If your compiler flags an error, you should either fix it or talk to the one who developped the compiler.</p>
+        <p>You can export a list of all warnings, errors and notes in a project: <em>File &gt; Export &gt; General &gt; Export Markers</em></p>
+<ul>
+<li>Select the project (or projects) for which you want to export the problem markers.</li>
+<li>Choose a file format; either HTML or CSV</li>
+<li>Choose your output file</li>
+<li>Click <em>Finish</em></li>
+</ul>
+<p><img alt="Alt text" src="/screenshots/export_markers.png" /></p>
       </div>
     </div>
 
@@ -75,12 +79,13 @@ Even though the warning may still be visible in your file, it is now removed fro
   </div>
 
   <ul class="pager">
-    <li class="previous"><a href="/installing.html">&larr; Installing</a></li>
-    <li class="next"><a href="/export_warnings.html">Export Warnings &rarr;</a></li>
+    <li class="previous"><a href="/manual/suppress_warnings.html">&larr; Suppress Warnings</a></li>
+    <li class="next"><a href="/manual/import_warnings.html">Import Warnings &rarr;</a></li>
   </ul>
 
     <div class="footer">
         <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
+        <p>Brought to you by <a href="http://www.sigasi.com">Sigasi</a></p>
     </div>
 
 

@@ -1,13 +1,11 @@
 ---
-title: Marker Manager 
-layout: home
+title: Manual
+layout: index
 content:
-    - manual
-    - about
-tagline:
-    Manage your compiler warnings in Eclipse. 
-    Always be at "zero warnings."
-
+    - intro 
+    - suppress_warnings
+    - export_warnings
+    - import_warnings
 ---
 
 

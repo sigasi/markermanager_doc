@@ -1,9 +1,10 @@
 brand: Marker Manager
 
-bootswatch: null # flatly, yeti, lumen,... 
+bootswatch: null 
 navbar_inverse: false 
 bootstrap: 3.3.4
-navbar_right_items: 1
+
+footer: tatta
 # baseurl: /testdoc
 
 reflinks:

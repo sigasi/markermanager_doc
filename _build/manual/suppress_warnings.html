@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Marker Manager</title>
+    <title>Suppress Warnings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <!-- Bootstrap -->
@@ -34,10 +34,9 @@
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav navbar-left">
- 
             <li><a href="/about.html">About</a></li>
             <li><a href="/installing.html">Installing</a></li>
-            <li><a href="/manual/">Manual</a></li>
+            <li class="active"><a href="/manual/">Manual</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -49,73 +48,44 @@
     </div>
 
 
-<div class="jumbotron">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Marker Manager Eclipse Plugin</h1>
-                <h2>Always be at zero warnings.</h2>
-             </div>
-        </div>
-    </div>
-</div>
-
 <div class="container">
-<div class="row">
-    <div class="col-md-6">
-        <h4>Go for Zero Warnings</h4>
-        <p>
-        Compiler warnings are only useful if you read them. Once they start piling up, 
-        you stop reading them and you might mis critical warnings that cause bugs. The 
-        only way is to keep your number of warnings to zero. Marker Manager helps you do this.
-        </p>
+
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li>
+      <li><a href="/manual/">Manual</a></li>
+      <li class="active">Suppress Warnings</li>
+  </ol>
+
+  <div class="page-header">
+    <h1>Suppress Warnings</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="content">
+      <div class="col-md-7" role="main">
+        <p>In any language in Eclipse, simply write <code>@suppress</code> on the line of your warning. Your warning will be suppressed.
+Even though the warning may still be visible in your file, it is now removed from the Problems View.</p>
+<p><img alt="Alt text" src="/screenshots/ignore_warning.png" /></p>
+<p>Note that you can only suppress <em>warnings</em>, not errors or notes. If your compiler flags an error, you should either fix it or talk to the one who developped the compiler.</p>
+      </div>
     </div>
 
-    <div class="col-md-6">
-        <h4>Any Lanuguage</h4>
-        <p>
-        Manage your compiler warnings for any programming language. Be it Python, Java, C++, 
-        Verilog, VHDL or your own proprietary domain specific language. One tool deals with 
-        compiler output for all languages.
-        </p>
-    </div> 
-</div>
 
-<p><hr >
-<div class="clearfix visible-md visible-lg"></div></p>
-<div class="row">
+  </div>
 
-    <div class="col-md-4">
-        <h4>Suppress</h4>
-        <p>Suppress warnings in any programming language, simply by 
-        writing a commented annotation in your code.
-        </p>
-    </div>
-
-    <div class="col-md-4">
-        <h4>Export</h4>
-        <p>
-        Export the warnings, note and errors from your Eclipse project. 
-        You can add these as "lint" report when you deliver your code.
-        </p>
-    </div>
-
-    <div class="col-md-4">
-        <h4>Import</h4>
-        <p>
-        Import compiler warnings from other tools. Run lint tools or 
-        other analysis tools independently and import their output. 
-        Warning icons will show up in the source code, so that it is easy to fix them.
-        </p>
-    </div>
-</div>
-</div>
+  <ul class="pager">
+    <li class="previous"><a href="/manual/intro.html">&larr; Introduction</a></li>
+    <li class="next"><a href="/manual/export_warnings.html">Export Warnings &rarr;</a></li>
+  </ul>
 
     <div class="footer">
         <p>Website powered by <a href="http://urubu.jandecaluwe.com">Urubu</a></p>
         <p>Brought to you by <a href="http://www.sigasi.com">Sigasi</a></p>
     </div>
 
+
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
