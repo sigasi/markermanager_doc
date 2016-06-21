@@ -7,4 +7,4 @@ pager: true
 Contact
 ========
 
-contact page
+info@sigasi.com
