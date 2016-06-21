@@ -16,7 +16,7 @@ fi
 
 echo "Fetch and checkout latest version from Assembla"
 git fetch origin gh-pages -q || exit -1
-git branch -D gh-pages -q || exit -1
+git branch -D gh-pages -q 
 git worktree add _build origin/gh-pages -b gh-pages || exit -1
 GITWORKTREE=$(cat _build/.git)
 
@@ -26,13 +26,13 @@ make build || exit -1
 echo $GITWORKTREE > _build/.git
 
 cd _build || exit -1
-if !  git diff-index --quiet HEAD --
-then
-  echo "No changes"
-else
-  echo "Commit changes"
-  git add -A || exit -1
-  git commit -m "Update urubu site" || exit -1
-  git push origin gh-pages || exit -1
-fi
-
+  if !  git diff-index --quiet gh-pages --
+  then
+    echo "No changes"
+  else
+    echo "Commit changes"
+    git add -A || exit -1
+    git commit -m "Update urubu site" || exit -1
+    git push origin gh-pages || exit -1
+  fi
+cd ..
