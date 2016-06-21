@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -x
+
 # make sure everything is clean
 rm -rf _build || exit -1
 git worktree prune || exit -1
@@ -14,10 +16,14 @@ fi
 
 echo "Fetch and checkout latest version from Assembla"
 git fetch origin gh-pages -q || exit -1
-git worktree add _build origin/gh-pages || exit -1
+git branch -D gh-pages -q || exit -1
+git worktree add _build origin/gh-pages -b gh-pages || exit -1
+GITWORKTREE=$(cat _build/.git)
 
 echo "Build"
 make build || exit -1
+
+echo $GITWORKTREE > _build/.git
 
 cd _build || exit -1
 if !  git diff-index --quiet HEAD --
