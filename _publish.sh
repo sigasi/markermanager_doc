@@ -26,13 +26,8 @@ make build || exit -1
 echo $GITWORKTREE > _build/.git
 
 cd _build || exit -1
-  if !  git diff-index --quiet gh-pages --
-  then
-    echo "No changes"
-  else
     echo "Commit changes"
     git add -A || exit -1
     git commit -m "Update urubu site" || exit -1
     git push origin gh-pages || exit -1
-  fi
 cd ..
