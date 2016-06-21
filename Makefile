@@ -15,6 +15,6 @@ serve:
 	python -m urubu serve
 
 publish: build
-	git subtree push --prefix _build origin gh-pages    
+	./_publish.sh
 
 .PHONY: help all build serve publish
