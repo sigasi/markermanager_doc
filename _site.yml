@@ -4,8 +4,7 @@ bootswatch: null
 navbar_inverse: false 
 bootstrap: 3.3.4
 
-footer: tatta
-# baseurl: /testdoc
+google_analytics: UA-2852630-16
 
 reflinks:
     content_license:
