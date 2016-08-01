@@ -3,7 +3,6 @@ title: Marker Manager
 longtitle: Marker Manager Eclipse Plugin
 layout: home
 content:
-    - about 
     - installing
     - manual
     - contact
