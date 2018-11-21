@@ -1,10 +1,9 @@
 ---
 title: Marker Manager
 longtitle: Marker Manager Eclipse Plugin
-layout: page
+layout: home
 content:
     - installing
-    - manual
     - contact
 tagline:
     Always be at zero warnings.
@@ -44,6 +43,5 @@ Right-click on your project; **Configure > Enable Marker Builder**
  
 
 ## Example project
-===============
 
 We have created an example project that demonstrates the use of the Marker Builder. You can download [this project from GitHub](http://www.github.com:sigasi/eclipse_custom_code_checker)
