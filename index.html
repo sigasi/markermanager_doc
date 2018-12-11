@@ -45,7 +45,6 @@
           <ul class="nav navbar-nav navbar-left">
  
             <li><a href="/installing.html">Installing</a></li>
-            <li><a href="/manual/">Manual</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -69,54 +68,29 @@
 </div>
 
 <div class="container">
-<div class="row">
-    <div class="col-md-6">
-        <h4>Go for Zero Warnings</h4>
-        <p>
-        Compiler warnings are only useful if you read them. Once they start piling up, 
-        you stop reading them and you might mis critical warnings that cause bugs. The 
-        only way is to keep your number of warnings to zero. Marker Manager helps you do this.
-        </p>
-    </div>
+<p>This plugins enables you to automatically import warnings from other tools such as external compilers,  lint tools or 
+other analysis tools. Warning icons will show up in the source code, so that it is easy to fix them.</p>
+<h3 id="why-import-warnings">Why import warnings?</h3>
+<p>It can be useful to import warnings from other tools.</p>
+<p>For example, if you have a third party code checker that does not</p>
+<p>This feature is called the <em>Marker Builder</em> </p>
+<h3 id="how-to-import-warnings">How to import warnings</h3>
+<p>Generate a list of warnings</p>
+<p>The Marker Builder reads one specific file, named <code>markers.rpt</code>, in the root directory of your project. 
+In this file, each line contains tab-separated values, in either of the following formats:</p>
+<div class="codehilite"><pre><span></span>filename linenumber warning message
+</pre></div>
 
-    <div class="col-md-6">
-        <h4>Any Lanuguage</h4>
-        <p>
-        Manage your compiler warnings for any programming language. Be it Python, Java, C++, 
-        Verilog, VHDL or your own proprietary domain specific language. One tool deals with 
-        compiler output for all languages.
-        </p>
-    </div> 
-</div>
 
-<p><hr >
-<div class="clearfix visible-md visible-lg"></div></p>
-<div class="row">
+<p>or</p>
+<div class="codehilite"><pre><span></span>filename linenumber startchar endchar warning message
+</pre></div>
 
-    <div class="col-md-4">
-        <h4>Suppress</h4>
-        <p>Suppress warnings in any programming language, simply by 
-        writing a commented annotation in your code.
-        </p>
-    </div>
 
-    <div class="col-md-4">
-        <h4>Export</h4>
-        <p>
-        Export the warnings, note and errors from your Eclipse project. 
-        You can add these as "lint" report when you deliver your code.
-        </p>
-    </div>
-
-    <div class="col-md-4">
-        <h4>Import</h4>
-        <p>
-        Import compiler warnings from other tools. Run lint tools or 
-        other analysis tools independently and import their output. 
-        Warning icons will show up in the source code, so that it is easy to fix them.
-        </p>
-    </div>
-</div>
+<p>Enable the Marker Builder</p>
+<p>Right-click on your project; <strong>Configure &gt; Enable Marker Builder</strong></p>
+<h3 id="example-project">Example project</h3>
+<p>We have created an example project that demonstrates the use of the Marker Builder. You can download <a href="http://www.github.com:sigasi/eclipse_custom_code_checker">this project from GitHub</a></p>
 </div>
 
     <div class="footer">
