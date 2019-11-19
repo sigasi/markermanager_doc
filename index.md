@@ -28,13 +28,13 @@ The Marker Builder reads one specific file, named `markers.rpt`, in the root dir
 In this file, each line contains tab-separated values, in either of the following formats:
 
 ```
-filename linenumber warning message
+filename linenumber "warning message"
 ```
 
 or
 
 ```
-filename linenumber startchar endchar warning message
+filename linenumber startchar endchar "warning message"
 ```
 
 Enable the Marker Builder
