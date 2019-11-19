@@ -19,7 +19,7 @@ fi
 
 VERSION_HASH=$(git rev-parse --short HEAD)
 
-echo "Fetch and checkout latest version from Assembla"
+echo "Fetch and checkout latest version"
 git fetch origin gh-pages -q || exit -1
 git worktree add _build gh-pages || exit -1
 pushd _build || exit -1
